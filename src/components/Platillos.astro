@@ -1,0 +1,129 @@
+<div class="container">
+    <h1>Choose Your Dish</h1>
+    <ul>
+        <li>Snacks</li>
+        <li>Desserts</li>
+        <li>Food</li>
+        <li>Reataurent</li>
+    </ul>
+    <div class="container-platillos">
+        <div class="container-platillos-left">
+            <div>
+                <h4>CHINESE EGG CAKE</h4>
+                <span>Chinese musterd/ Chipotle aioli/ Mayonnise</span>
+            </div>
+            <div>
+                <h4>CHINESE EGG CAKE</h4>
+                <span>Chinese musterd/ Chipotle aioli/ Mayonnise</span>
+            </div>
+            <div>
+                <h4>CHINESE EGG CAKE</h4>
+                <span>Chinese musterd/ Chipotle aioli/ Mayonnise</span>
+            </div>
+            <div>
+                <h4>CHINESE EGG CAKE</h4>
+                <span>Chinese musterd/ Chipotle aioli/ Mayonnise</span>
+            </div>
+        </div>
+        <div class="container-platillos-right">
+            <div>
+                <h4>CHINESE EGG CAKE</h4>
+                <span>Chinese musterd/ Chipotle aioli/ Mayonnise</span>
+            </div>
+            <div>
+                <h4>CHINESE EGG CAKE</h4>
+                <span>Chinese musterd/ Chipotle aioli/ Mayonnise</span>
+            </div>
+            <div>
+                <h4>CHINESE EGG CAKE</h4>
+                <span>Chinese musterd/ Chipotle aioli/ Mayonnise</span>
+            </div>
+            <div>
+                <h4>CHINESE EGG CAKE</h4>
+                <span>Chinese musterd/ Chipotle aioli/ Mayonnise</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+    .container{
+        padding: 6rem 0;
+        display: grid;
+        justify-items: center;
+        font-family: arial;
+        gap: 50px;
+    }
+
+    .container > h1{
+        font-size: 4rem;
+        font-weight: 900;
+        margin: 0;
+    }
+
+    .container > ul{
+        display: flex;
+        gap: 30px;
+        list-style: none;
+        border-bottom: 2px solid grey;
+        padding: 0;
+    }
+
+    .container > ul > li{
+        padding: 20px 0;
+        font-weight: bold;
+    }
+
+    .container > ul > li:hover{
+        border-bottom: 2px solid rgb(255, 76, 56);
+    }
+
+    .container-platillos{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        
+    }
+
+    .container-platillos > div{
+        display: grid;
+        gap: 20px;
+    }
+
+    .container-platillos > div > div{
+        background-color: #fff;
+        border: 1px solid #000;
+        box-shadow: 1px 1px 1px 1px #000;
+        padding: 0.5rem 1rem;
+    }
+
+    .container-platillos > div > div > h4{
+        color: rgb(255, 76, 56);
+    }
+
+    .container-platillos > div > div > span{
+        color: grey;
+    }
+
+    @media (max-width: 1400px){
+        .container-platillos{
+            width: 60%;
+        }
+    }
+
+    @media (max-width: 1200px){
+        .container-platillos{
+            width: 70%;
+        }
+    }
+
+        @media (max-width: 630px){
+        .container > h1{
+            font-size: 3.2rem;
+            text-align: center;
+        }
+    }
+
+</style>

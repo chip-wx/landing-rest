@@ -1,0 +1,46 @@
+<div class="container">
+    <h3>Make a Reservation</h3>
+    <div class="container-inputs">
+        <input type="text" placeholder="Date">
+        <input type="text" placeholder="Time">
+        <input type="text" placeholder="Person">
+        <button>FIND TABLE</button>
+    </div>
+</div>
+
+<style>
+    .container{
+        background-image: url("../../public/IMG/reservation.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        color: #fff;
+        font-family: arial;
+        padding: 8rem 0;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+    }
+
+    .container > h3{
+        font-size: 4rem;
+        -webkit-text-stroke: 1px #000;
+    }
+
+    .container > .container-inputs{
+        display: flex;
+        gap: 2rem;
+    }
+
+    .container > .container-inputs > input, button{
+        padding: 10px;
+        text-align: center;
+    }
+
+    .container > .container-inputs > button{
+        background-color: rgb(255, 76, 56);
+        border: none;
+        color: #fff;
+    }
+</style>
