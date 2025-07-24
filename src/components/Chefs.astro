@@ -75,10 +75,12 @@
 </div>
 
 <style>
+    *{
+        box-sizing: border-box;
+    }
     .container{
         display: grid;
         align-content: center;
-        justify-items: center;
         gap: 5rem;
         padding: 4rem 0;
         font-family: arial;
@@ -101,9 +103,10 @@
     }
 
     .container > .container-chiefs{
+        max-width: 100%;
+        margin: auto 0;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         text-align: center;
     }
 
@@ -135,14 +138,23 @@
     }
 
     .container > .container-chiefs > div > div >  ul{
+        padding: 0;
         list-style: none;
         display: flex;
-        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
     }
 
     .container > .container-chiefs > div > div > ul > li{
         border: 1px solid #000;
         padding: 5px;
         border-radius: 50%;
+    }
+
+    @media (max-width: 768px){
+        .container h3{
+            font-size: 2rem;
+        }
     }
 </style>

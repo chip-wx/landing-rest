@@ -1,0 +1,110 @@
+<div class="container">
+    <div class="info">
+        <div class="title">
+            <h2>Discover</h2>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, illum commodi necessitatibus placeat sed ullam esse, minima maxime molestias</p>
+        <div class="chef">
+            <div class="chef-img">
+            </div>
+            <div class="chef-info">
+                <h4>ABDUL HASAN</h4>
+                <span>CEO FOOFD FIZZA</span>
+            </div>
+        </div>
+    </div>
+    <div class="platillo">
+        <img src="/landing-rest/IMG/platillo.png" alt="">
+    </div>
+</div>
+
+<style>
+   .container {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 8%;
+  gap: 2rem;
+  background-color: #fff;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.title h2 {
+  font-size: 3.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.info > p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  max-width: 500px;
+}
+
+.chef {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.chef-img {
+  width: 80px;
+  height: 80px;
+  background-color: #ac8849;
+  border-radius: 50%;
+}
+
+.chef-info h4 {
+  margin: 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.chef-info span {
+  color: #ac8849;
+  font-size: 0.9rem;
+}
+
+.platillo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.platillo img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .info > p {
+    max-width: 100%;
+  }
+
+  .chef {
+    justify-content: center;
+  }
+
+  .platillo {
+    margin-top: 2rem;
+  }
+}
+</style>
